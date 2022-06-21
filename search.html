@@ -59,11 +59,11 @@
     <script>
       const f = document.getElementById('form');
       const q = document.getElementById('query');
-      const google = 'https://www.google.com/search?client=firefox-b-lm&q=';
+      const searx = 'https://searxng.au/searx/search?q=';
 
       function submitted(event) {
         event.preventDefault();
-        const url = google + '+' + q.value;
+        const url = searx + '+' + q.value;
         const win = window.open(url, "_self");
         win.focus();
       }
