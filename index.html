@@ -181,6 +181,9 @@
       		</button>
     		</form>
     		    <script>
+			    window.onload = function() {
+					document.getElementById("form").focus();
+				};
       				const f = document.getElementById('form');
       				const q = document.getElementById('query');
       				const searx = 'https://priv.au/search?q=';
